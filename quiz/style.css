@@ -1,0 +1,73 @@
+/* 全体のレイアウト */
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 { color: #333; }
+
+/* 問題文と選択肢 */
+#question-text {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+#options-container {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* ボタンの色分け */
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.primary-btn:hover { background-color: #0056b3; }
+
+.secondary-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.secondary-btn:hover { background-color: #5a6268; }
+
+/* ヒントエリア */
+.hint-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fff3cd;
+    border-left: 5px solid #ffecb5;
+    color: #856404;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}

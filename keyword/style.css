@@ -1,0 +1,94 @@
+/* 全体の背景設定 */
+body {
+    background-color: #f8f9fa; /* 画像のような非常に薄いグレー */
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* カードのデザイン（画像の中央の白い枠） */
+.card {
+    background: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 16px; /* 角丸 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* 柔らかい影 */
+    text-align: center;
+}
+
+/* タイトル部分 */
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* テキスト部分 */
+.description {
+    color: #666;
+    font-size: 0.95rem;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* 入力欄とボタン */
+input {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    background-color: #b8a49a; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #a38f85;
+}
+
+/* 区切り線（画像にある細いグレーの線） */
+.divider {
+    border: none;
+    border-top: 1px solid #eeeeee;
+    margin: 25px 0;
+}
+
+/* エラーメッセージ */
+.error {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 戻るリンク */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #b8a49a;
+    text-decoration: none;
+    font-size: 14px;
+}

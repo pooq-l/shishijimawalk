@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルクイズサイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>面白クイズ</h1>
+        <hr>
+        
+        <div id="question-area">
+            <h2 id="question-text">ここに問題が表示されます</h2>
+            <div id="options-container">
+                </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="hint-btn" class="secondary-btn">ヒントを見る</button>
+            <button id="next-btn" class="primary-btn">次の問題へ</button>
+        </div>
+
+        <div id="hint-display" class="hint-box hidden">
+            <strong>💡 ヒント:</strong> <span id="hint-text"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
